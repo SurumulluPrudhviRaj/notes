@@ -198,3 +198,8 @@ echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 source ~/.zshrc
 Let me know if the gem install worked — or if it throws another error. I’ve got your back!
 
+
+
+git remote add origin https://github.com/SurumulluPrudhviRaj/authentication.git
+git branch -M main
+git push -u origin main
