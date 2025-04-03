@@ -43,3 +43,69 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Dart & Flutter
+.dart_tool/
+.packages
+.pub-cache/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-versions
+.fvm/
+.idea/
+android/.gradle/
+.env
+*.iml
+
+# Firebase
+firebase.json
+firebase_options.dart
+.flutterfire-*
+*.firebase/
+
+# Android
+android/app/debug
+android/app/profile
+android/app/release
+android/local.properties
+android/key.properties
+*.jks
+*.keystore
+
+# iOS & macOS
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/.symlinks/
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/DerivedData/
+ios/.dart_tool/
+macos/Flutter/Flutter.framework
+macos/Flutter/Flutter.podspec
+macos/.symlinks/
+macos/Pods/
+macos/.dart_tool/
+macos/Runner.xcworkspace/
+macos/DerivedData/
+
+# Web
+web/firebase-messaging-sw.js
+web/manifest.json
+
+# VS Code & IntelliJ
+.vscode/
+.idea/
+
+# Xcode
+*.xcuserstate
+*.xcworkspace
+*.xcodeproj/project.xcworkspace/
+xcuserdata/
+DerivedData/
+
+# Misc
+*.log
+*.tmp
+*.DS_Store
+pubspec.lock
