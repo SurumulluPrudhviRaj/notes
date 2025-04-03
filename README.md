@@ -134,3 +134,67 @@ Each of these methods interacts with Firebase Firestore using the Firestore SDK'
 
 This flow allows for a seamless and responsive user experience where users can add, update, view, and delete notes, and see the changes immediately.
 
+
+
+*** Issues i have Faced **** 
+
+npm install -g firebase-tools
+firebase login
+flutter pub global activate flutterfire_cli
+export PATH="$PATH":"$HOME/.pub-cache/bin”
+
+flutterfire configure
+
+flutter pub add firebase_core
+
+
+*** Installing the flutter fire cloud*****
+
+flutter pub add cloud_firestore
+
+
+
+
+installing
+ brew install node@20
+
+brew list --versions | grep node
+
+to use the particular version 
+
+brew link --overwrite --force node@20
+
+
+Issue  cannot load such file -- xcodeproj (LoadError)
+
+Thanks for sharing that! You're almost there — the Firebase Android & iOS apps were registered successfully ✅
+
+But now you're hitting this Ruby-related error:
+
+cannot load such file -- xcodeproj (LoadError)
+🔍 What’s the issue?
+
+The FlutterFire CLI uses Ruby scripts under the hood for iOS configuration. This error means the Ruby gem xcodeprojis missing on your system.
+
+✅ Solution: Install the xcodeproj gem
+
+Since you're using rbenv and Ruby 3.2.2, you can install it like this:
+
+gem install xcodeproj
+If you see permission errors, try:
+
+sudo gem install xcodeproj
+Then re-run:
+
+flutterfire configure
+Optional: If you hit any rbenv-related issues
+
+You might also need to ensure that RubyGems from rbenv is in your path correctly:
+
+eval "$(rbenv init -)"
+Or add it to your .zshrc:
+
+echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+source ~/.zshrc
+Let me know if the gem install worked — or if it throws another error. I’ve got your back!
+
